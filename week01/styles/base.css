@@ -1,0 +1,199 @@
+:root {
+    --header-bg: #22577a;
+    --nav-bg: #333333;
+    --card-header-bg: #2b5b84;
+    --border-color: #cccccc;
+    --link-color: #0000ee;
+    --text-main: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-main);
+    line-height: 1.5;
+    background-color: #ffffff;
+}
+
+.header {
+    background-color: var(--nav-bg);
+    width: 100%;
+}
+
+.header-content {
+    background-color: var(--header-bg);
+    text-align: center;
+    padding: 15px 0;
+}
+
+#course-title {
+    display: block;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+.main-content {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.main-content h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card h2 {
+    background-color: var(--card-header-bg);
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.card-body {
+    padding: 20px 25px;
+}
+
+.card-content-row {
+    display: flex;
+    gap: 20px;
+}
+
+.top-row {
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.bottom-row {
+    align-items: center;
+    padding: 0 25px;
+}
+
+.card-content-row p {
+    flex: 1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.country-heading {
+    text-align: center;
+    font-size: 1.1rem;
+    margin:20px 25px 10px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: var(--border-color);
+    width: 85%;
+    margin: 0 auto 20px;
+}
+
+.profile-img {
+    width: 140px;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.flag-figure {
+    text-align: center;
+    margin: 0;
+    flex-shrink: 0;
+    width: 150px;
+}
+
+.flag-img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+.flag-figure figcaption {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #555;
+    margin-top: 8px;
+}
+
+.resource-list {
+    list-style-position: inside;
+    padding: 20px 25px;
+    margin-top: 10px;
+}
+
+.resource-list li {
+    margin-bottom: 15px;
+}
+
+.resource-list a {
+    color: var(--link-color);
+    text-decoration: underline;
+    font-size: 0.95rem;
+}
+
+.resource-list a:hover {
+    text-decoration: none;
+}
+
+.footer {
+    background-color: var(--header-bg);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 3px 0;
+}
