@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap');
-
 :root {
     --primary-color: #173b57;
     --secondary-color: #dceef7;
@@ -94,24 +92,22 @@ footer {
     margin-top: 2rem;
     line-height: 1.8;
 }
-
-/* Hamburger button */
-
+#nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+}
+#nav-menu.show {
+    display: flex;
+}
 #menu-button {
+    display: block;
     background: none;
     border: none;
     color: white;
     font-size: 2rem;
     cursor: pointer;
     padding: 0.5rem;
-}
-#nav-menu {
-    display: none;
-}
-#nav-menu.show {
-    display: flex;
-}
-#nav-menu {
-    flex-direction: column;
-    align-items: center;
 }
